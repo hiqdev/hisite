@@ -1,0 +1,11 @@
+package:
+    type:           yii2-extension
+    name:           hisite-core
+    title:          Hisite core package
+    headline:       Hisite Core
+    keywords:       yii2, hisite, core
+    namespace:      hisite
+    description: |
+        HiSite is a way to build Yii2 based sites from components.
+
+        This package is the core of the system.
