@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2014-2016, HiQDev (http://hiqdev.com/)
  */
 
-$config = [
+return [
     'id' => 'hisite',
     'name' => 'HiSite',
     'basePath' => dirname(__DIR__),
@@ -17,7 +17,7 @@ $config = [
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
-    'bootstrap' => ['log', 'themeManager', 'language', 'menuManager'],
+    'bootstrap' => ['log'],
     'aliases' => [
         '@bower'        => '@vendor/bower-asset',
         '@npm'          => '@vendor/npm-asset',
@@ -29,9 +29,8 @@ $config = [
             'enableCsrfCookie'    => true, /// XXX TO BE DISABLED
             'cookieValidationKey' => $params['cookieValidationKey'],
         ],
-        'mailer' => [
-            'class' => \yii\swiftmailer\Mailer::class,
-            'viewPath' => '@hisite/mail',
+        'cache' => [
+            'class' => \yii\caching\FileCache::class,
         ],
         'log' => [
             'traceLevel' => defined('YII_DEBUG') && YII_DEBUG ? 3 : 0,
@@ -56,38 +55,5 @@ $config = [
                 '<_c:[\w\-]+>/<_a:[\w\-]+>/<id:\d+>' => '<_c>/<_a>',
             ],
         ],
-        'themeManager' => [
-            'class' => \hiqdev\thememanager\ThemeManager::class,
-        ],
-        'menuManager' => [
-            'class' => \hiqdev\menumanager\MenuManager::class,
-            'items' => [
-                'sidebar' => [
-                    'items' => [],
-                ],
-                'breadcrumbs' => [
-                    'saveToView' => 'breadcrumbs',
-                ],
-            ],
-        ],
-    ],
-    'modules' => [
-        'language' => [
-            'class' => \hiqdev\yii2\language\Module::class,
-            'languages' => [
-                'en' => 'English',
-                'ru' => 'Русский',
-            ]
-        ],
     ],
 ];
-
-if (defined('YII_DEBUG') && YII_DEBUG) {
-    $config['bootstrap']['debug'] = 'debug';
-    $config['modules']['debug'] = [
-        'class' => \yii\debug\Module::class,
-        'allowedIPs' => $params['debug_allowed_ips'],
-    ];
-}
-
-return $config;
