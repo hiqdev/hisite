@@ -44,10 +44,10 @@ class SiteController extends Controller
     {
         return [
             'error' => [
-                'class' => yii\web\ErrorAction::class,
+                'class' => \yii\web\ErrorAction::class,
             ],
             'captcha' => [
-                'class' => yii\captcha\CaptchaAction::class,
+                'class' => \yii\captcha\CaptchaAction::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
@@ -111,6 +111,16 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * Displays contacts page.
+     *
+     * @return string
+     */
+    public function actionContacts()
+    {
+        return $this->render('contacts');
     }
 
     /**
