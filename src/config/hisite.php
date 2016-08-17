@@ -59,5 +59,23 @@ return [
                 '<_c:[\w\-]+>/<_a:[\w\-]+>/<id:\d+>' => '<_c>/<_a>',
             ],
         ],
+        'i18n' => [
+            'translations' => [
+                'hisite' => [
+                    'class' => \yii\i18n\PhpMessageSource::class,
+                    'basePath' => '@hisite/messages',
+                    'fileMap' => [
+                        'hisite' => 'hisite.php',
+                    ],
+                ],
+                'hisite/page' => [
+                    'class' => \yii\i18n\PhpMessageSource::class,
+                    'basePath' => '@hisite/messages',
+                    'fileMap' => [
+                        'page' => 'page.php',
+                    ],
+                ],
+            ],
+        ],
     ],
 ];
