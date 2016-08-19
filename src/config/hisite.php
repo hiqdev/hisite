@@ -59,6 +59,11 @@ return [
                 '<_c:[\w\-]+>/<_a:[\w\-]+>/<id:\d+>' => '<_c>/<_a>',
             ],
         ],
+        'menuManager' => [
+            'menus' => [
+                'main' => \hisite\MainMenu::class,
+            ],
+        ],
         'i18n' => [
             'translations' => [
                 'hisite' => [
