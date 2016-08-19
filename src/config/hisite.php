@@ -61,7 +61,8 @@ return [
         ],
         'menuManager' => [
             'menus' => [
-                'main' => \hisite\MainMenu::class,
+                'main'   => \hisite\MainMenu::class,
+                'footer' => \hisite\FooterMenu::class,
             ],
         ],
         'i18n' => [
