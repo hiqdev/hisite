@@ -12,18 +12,19 @@
 return [
     'id' => 'hisite',
     'name' => 'HiSite',
+    'aliases' => [
+        '@bower'        => '@vendor/bower-asset',
+        '@npm'          => '@vendor/npm-asset',
+        '@vendor/bower' => '@vendor/bower-asset',
+        '@vendor/npm'   => '@vendor/npm-asset',
+        '@hisite'       => dirname(__DIR__),
+    ],
     'basePath' => dirname(__DIR__),
     'viewPath' => '@hisite/views',
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
     'bootstrap' => ['log'],
-    'aliases' => [
-        '@bower'        => '@vendor/bower-asset',
-        '@npm'          => '@vendor/npm-asset',
-        '@vendor/bower' => '@vendor/bower-asset',
-        '@vendor/npm'   => '@vendor/npm-asset',
-    ],
     'components' => [
         'request' => [
             'enableCsrfCookie'    => true, /// XXX TO BE DISABLED
