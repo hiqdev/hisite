@@ -14,7 +14,7 @@ $this->params['noTitle'] = true;
 <section id="main-slider" class="no-margin center">
     <div class="well">
         <p><img src="<?= $this->assetManager->publish('@hiqdev/themes/flat/assets/images/slider/bg2.png')[1] ?>" alt="Yii 2" /></p>
-        <p>An easy way to create your Yii2 project from building blocks.</p>
+        <p>Smart way to create Yii2 project from building blocks.</p>
         <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" target="_blank">Github</a>
     </div>
 </section>
@@ -100,7 +100,7 @@ $this->params['noTitle'] = true;
                 </div>
                 <p>Available themes are:</p>
                 <ol>
-                    <li><b>original</b> - original Yii2 theme from basic application templates, <a href="https://github.com/hiqdev/yii2-theme-original"><code>hiqdev/yii2-theme-original</code></a></li>
+                    <li><b>original</b> - original Yii2 theme from basic application template, <a href="https://github.com/hiqdev/yii2-theme-original"><code>hiqdev/yii2-theme-original</code></a></li>
                     <li><b>flat</b> - nice flat theme from <a href="http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/" target="_blank">here</a>, <a href="https://github.com/hiqdev/yii2-theme-flat"><code>hiqdev/yii2-theme-flat</code></a></li>
                 </ol>
             </div>
