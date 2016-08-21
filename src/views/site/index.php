@@ -28,7 +28,7 @@ $this->params['noTitle'] = true;
                         <i class="icon-twitter icon-md"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">Twitter Marketing</h3>
+                        <h3 class="media-heading">Building blocks</h3>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ $this->params['noTitle'] = true;
                         <i class="icon-facebook icon-md"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">Facebook Marketing</h3>
+                        <h3 class="media-heading">Themes</h3>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ $this->params['noTitle'] = true;
                         <i class="icon-google-plus icon-md"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">Google Plus Marketing</h3>
+                        <h3 class="media-heading">More...</h3>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
                     </div>
                 </div>
