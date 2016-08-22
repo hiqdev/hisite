@@ -66,6 +66,11 @@ return [
                 'footer' => \hisite\FooterMenu::class,
             ],
         ],
+        'themeManager' => [
+            'pathDirs' => [
+                'hisite' => '@hisite',
+            ],
+        ],
         'i18n' => [
             'translations' => [
                 'hisite' => [
