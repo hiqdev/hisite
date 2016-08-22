@@ -3,8 +3,8 @@
 ## [0.0.1] - 2016-08-22
 
 - Added basics
-    - [414a522] 2016-08-22 added empty tests [sol@hiqdev.com]
-    - [55c56cd] 2016-08-22 csfixed [sol@hiqdev.com]
+    - [c971a74] 2016-08-22 added empty tests [sol@hiqdev.com]
+    - [465d331] 2016-08-22 csfixed [sol@hiqdev.com]
     - [07007da] 2016-08-20 moved aliases config to front [sol@hiqdev.com]
     - [7b8ae5f] 2016-08-19 added FooterMenu [sol@hiqdev.com]
     - [77bbd94] 2016-08-19 added default error and login pages [sol@hiqdev.com]
@@ -23,20 +23,20 @@
 
 ## [Development started] - 2016-08-09
 
-[55c56cd]: https://github.com//commit/55c56cd
-[07007da]: https://github.com//commit/07007da
-[7b8ae5f]: https://github.com//commit/7b8ae5f
-[77bbd94]: https://github.com//commit/77bbd94
-[3ca9d44]: https://github.com//commit/3ca9d44
-[dfa1378]: https://github.com//commit/dfa1378
-[d371519]: https://github.com//commit/d371519
-[aed8d52]: https://github.com//commit/aed8d52
-[60f9f31]: https://github.com//commit/60f9f31
-[e25f3e8]: https://github.com//commit/e25f3e8
-[50f2410]: https://github.com//commit/50f2410
-[253528a]: https://github.com//commit/253528a
-[6068e3b]: https://github.com//commit/6068e3b
-[fb2adfc]: https://github.com//commit/fb2adfc
-[247b676]: https://github.com//commit/247b676
-[1c2bb1e]: https://github.com//commit/1c2bb1e
-[414a522]: https://github.com//commit/414a522
+[c971a74]: https://github.com/hiqdev/hisite-core/commit/c971a74
+[465d331]: https://github.com/hiqdev/hisite-core/commit/465d331
+[07007da]: https://github.com/hiqdev/hisite-core/commit/07007da
+[7b8ae5f]: https://github.com/hiqdev/hisite-core/commit/7b8ae5f
+[77bbd94]: https://github.com/hiqdev/hisite-core/commit/77bbd94
+[3ca9d44]: https://github.com/hiqdev/hisite-core/commit/3ca9d44
+[dfa1378]: https://github.com/hiqdev/hisite-core/commit/dfa1378
+[d371519]: https://github.com/hiqdev/hisite-core/commit/d371519
+[aed8d52]: https://github.com/hiqdev/hisite-core/commit/aed8d52
+[60f9f31]: https://github.com/hiqdev/hisite-core/commit/60f9f31
+[e25f3e8]: https://github.com/hiqdev/hisite-core/commit/e25f3e8
+[50f2410]: https://github.com/hiqdev/hisite-core/commit/50f2410
+[253528a]: https://github.com/hiqdev/hisite-core/commit/253528a
+[6068e3b]: https://github.com/hiqdev/hisite-core/commit/6068e3b
+[fb2adfc]: https://github.com/hiqdev/hisite-core/commit/fb2adfc
+[247b676]: https://github.com/hiqdev/hisite-core/commit/247b676
+[1c2bb1e]: https://github.com/hiqdev/hisite-core/commit/1c2bb1e
