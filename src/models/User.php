@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * Hisite core package
+ *
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hisite\models;
 
 class User extends \yii\base\Object implements \yii\web\IdentityInterface
@@ -27,9 +36,8 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
         ],
     ];
 
-
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function findIdentity($id)
     {
@@ -37,7 +45,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
@@ -51,7 +59,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * Finds user by username
+     * Finds user by username.
      *
      * @param string $username
      * @return static|null
@@ -68,7 +76,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getId()
     {
@@ -76,7 +84,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getAuthKey()
     {
@@ -84,7 +92,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function validateAuthKey($authKey)
     {
@@ -92,7 +100,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     }
 
     /**
-     * Validates password
+     * Validates password.
      *
      * @param string $password password to validate
      * @return boolean if password provided is valid for current user

@@ -1,12 +1,12 @@
 <?php
 
 /*
- * Client module for HiPanel
+ * Hisite core package
  *
- * @link      https://github.com/hiqdev/hipanel-module-client
- * @package   hipanel-module-client
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 namespace hisite;
@@ -20,22 +20,23 @@ class MainMenu extends \hiqdev\menumanager\Menu
     public function items()
     {
         $login = Yii::$app->user->isGuest ? 'login' : 'logout';
+
         return [
             'home' => [
                 'label' => Yii::t('hisite', 'Home'),
-                'url'   => ['/site/index'],
+                'url' => ['/site/index'],
             ],
             'about' => [
                 'label' => Yii::t('hisite', 'About'),
-                'url'   => ['/site/about'],
+                'url' => ['/site/about'],
             ],
             'contact' => [
                 'label' => Yii::t('hisite', 'Contact'),
-                'url'   => ['/site/contact'],
+                'url' => ['/site/contact'],
             ],
             'login' => [
                 'label' => Yii::t('hisite', ucfirst($login)),
-                'url'   => ['/site/' . $login],
+                'url' => ['/site/' . $login],
             ],
         ];
     }

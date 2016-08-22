@@ -1,23 +1,23 @@
 <?php
 
 /*
- * HiPanel core package
+ * Hisite core package
  *
- * @link      https://hipanel.com/
- * @package   hipanel-core
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2014-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 return [
     'id' => 'hisite',
     'name' => 'HiSite',
     'aliases' => [
-        '@bower'        => '@vendor/bower-asset',
-        '@npm'          => '@vendor/npm-asset',
+        '@bower' => '@vendor/bower-asset',
+        '@npm' => '@vendor/npm-asset',
         '@vendor/bower' => '@vendor/bower-asset',
-        '@vendor/npm'   => '@vendor/npm-asset',
-        '@hisite'       => dirname(__DIR__),
+        '@vendor/npm' => '@vendor/npm-asset',
+        '@hisite' => dirname(__DIR__),
     ],
     'basePath' => dirname(__DIR__),
     'viewPath' => '@hisite/views',
@@ -27,7 +27,7 @@ return [
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
-            'enableCsrfCookie'    => true, /// XXX TO BE DISABLED
+            'enableCsrfCookie' => true, /// XXX TO BE DISABLED
             'cookieValidationKey' => $params['cookieValidationKey'],
         ],
         'cache' => [
@@ -62,7 +62,7 @@ return [
         ],
         'menuManager' => [
             'menus' => [
-                'main'   => \hisite\MainMenu::class,
+                'main' => \hisite\MainMenu::class,
                 'footer' => \hisite\FooterMenu::class,
             ],
         ],

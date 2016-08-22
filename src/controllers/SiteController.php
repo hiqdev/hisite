@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * Hisite core package
+ *
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hisite\controllers;
 
 use Yii;
@@ -12,7 +21,7 @@ use hisite\models\ContactForm;
 class SiteController extends Controller
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function behaviors()
     {
@@ -38,7 +47,7 @@ class SiteController extends Controller
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function actions()
     {
@@ -78,6 +87,7 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
+
         return $this->render('login', [
             'model' => $model,
         ]);
@@ -108,6 +118,7 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
+
         return $this->render('contact', [
             'model' => $model,
         ]);

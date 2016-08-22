@@ -13,6 +13,10 @@
 Thumbs.db
 nbproject
 
+# HiSite directories
+/runtime/*
+/web/assets/*
+
 # vendor dirs
 vendor
 

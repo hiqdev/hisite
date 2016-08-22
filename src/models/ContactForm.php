@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * Hisite core package
+ *
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hisite\models;
 
 use Yii;
@@ -17,7 +26,7 @@ class ContactForm extends Model
     public $verifyCode;
 
     /**
-     * @return array the validation rules.
+     * @return array the validation rules
      */
     public function rules()
     {
@@ -58,6 +67,7 @@ class ContactForm extends Model
 
             return true;
         }
+
         return false;
     }
 }

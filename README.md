@@ -8,6 +8,7 @@ Hisite Core
 [![Build Status](https://img.shields.io/travis/hiqdev/hisite-core.svg)](https://travis-ci.org/hiqdev/hisite-core)
 [![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/hiqdev/hisite-core.svg)](https://scrutinizer-ci.com/g/hiqdev/hisite-core/)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hisite-core.svg)](https://scrutinizer-ci.com/g/hiqdev/hisite-core/)
+[![Dependency Status](https://www.versioneye.com/php/hiqdev:hisite-core/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hisite-core/dev-master)
 
 HiSite is a way to build Yii2 based sites from components.
 

@@ -3,9 +3,8 @@
 /**
  * HiSite main page.
  *
- * @var yii\web\View $this View
+ * @var yii\web\View View
  */
-
 $this->title = Yii::$app->name;
 $this->params['noTitle'] = true;
 
