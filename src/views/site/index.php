@@ -12,7 +12,9 @@ $this->params['noTitle'] = true;
 
 <section id="main-slider" class="no-margin center">
     <div class="well">
+        <?php /*
         <p><img src="<?= $this->assetManager->publish('@hiqdev/themes/flat/assets/images/slider/bg2.png')[1] ?>" alt="Yii 2" /></p>
+        */ ?>
         <p>Smart way to create Yii2 project from building blocks.</p>
         <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" target="_blank">Github</a>
     </div>
