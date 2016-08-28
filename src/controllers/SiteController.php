@@ -59,17 +59,19 @@ class SiteController extends Controller
                 'class' => \yii\captcha\CaptchaAction::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'index' => [
+                'class' => \hisite\actions\RenderAction::class,
+            ],
+            'contacts' => [
+                'class' => \hisite\actions\RenderAction::class,
+            ],
+            'about' => [
+                'class' => \hisite\actions\RenderAction::class,
+            ],
+            'policy' => [
+                'class' => \hisite\actions\RenderAction::class,
+            ],
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
     }
 
     /**
@@ -124,23 +126,4 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * Displays contacts page.
-     *
-     * @return string
-     */
-    public function actionContacts()
-    {
-        return $this->render('contacts');
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
 }
