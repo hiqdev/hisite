@@ -67,8 +67,8 @@ return [
             ],
         ],
         'themeManager' => [
-            'pathDirs' => [
-                'hisite' => '@hisite',
+            'viewPaths' => [
+                'hisite' => '@hisite/views',
             ],
         ],
         'i18n' => [
