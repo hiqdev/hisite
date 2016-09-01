@@ -46,8 +46,9 @@
         "php": "^5.6|^7.0",
         "yiisoft/yii2": "^2.0",
         "hiqdev/yii2-menumanager": "<2.0 || dev-master",
-        "hiqdev/hidev-hisite": "<2.0 || dev-master",
-        "hiqdev/composer-config-plugin": "<2.0 || dev-master"
+        "hiqdev/yii2-thememanager": "<2.0 || dev-master",
+        "hiqdev/composer-config-plugin": "<2.0 || dev-master",
+        "hiqdev/hidev-hisite": "<2.0 || dev-master"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0 || dev-master",
