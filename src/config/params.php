@@ -10,9 +10,6 @@
  */
 
 return [
-    'orgUrl' => '',
-    'adminEmail' => 'admin@example.com',
-
-    'cookieValidationKey' => '',
-    'debug_allowed_ips' => [],
+    'poweredByName' => 'Yii2 & HiSite',
+    'poweredByUrl'  => 'https://github.com/hiqdev/hisite-core',
 ];
