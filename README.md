@@ -1,7 +1,7 @@
-Hisite Core
+HiSite Core
 ===========
 
-**Hisite core package**
+**HiSite core package**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/hisite-core/v/stable)](https://packagist.org/packages/hiqdev/hisite-core)
 [![Total Downloads](https://poser.pugx.org/hiqdev/hisite-core/downloads)](https://packagist.org/packages/hiqdev/hisite-core)

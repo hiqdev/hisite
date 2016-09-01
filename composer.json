@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/hisite-core",
     "type": "yii2-extension",
-    "description": "Hisite core package",
+    "description": "HiSite core package",
     "keywords": [
         "yii2",
         "hisite",

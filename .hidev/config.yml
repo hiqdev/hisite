@@ -1,8 +1,8 @@
 package:
     type:           yii2-extension
     name:           hisite-core
-    title:          Hisite core package
-    headline:       Hisite Core
+    title:          HiSite core package
+    headline:       HiSite Core
     keywords:       yii2, hisite, core
     namespace:      hisite
     description: |
