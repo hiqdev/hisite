@@ -28,7 +28,7 @@ return [
     'components' => [
         'request' => [
             'enableCsrfCookie' => true, /// XXX TO BE DISABLED
-            'cookieValidationKey' => $params['cookieValidationKey'],
+            'cookieValidationKey' => isset($params['cookieValidationKey']) ? $params['cookieValidationKey'] : null,
         ],
         'cache' => [
             'class' => \yii\caching\FileCache::class,
