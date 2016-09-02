@@ -1,5 +1,19 @@
 # hiqdev/hisite-core
 
+## [Under development]
+
+- Added RenderAction and LoginForm
+    - [6057c19] 2016-09-02 used LoginForm widget for login page [sol@hiqdev.com]
+    - [8813158] 2016-08-28 added RenderAction and used for index, contacts, about, policy [sol@hiqdev.com]
+- Fixed requirements and params
+    - [b52e0d4] 2016-09-02 fixed use of params in config [sol@hiqdev.com]
+    - [9c77e92] 2016-09-01 + powered by params [sol@hiqdev.com]
+    - [183831d] 2016-09-01 + require hiqdev/yii2-thememanager [sol@hiqdev.com]
+    - [8ee7b8e] 2016-08-31 changed pathDirs -> viewPaths [sol@hiqdev.com]
+    - [89bec27] 2016-08-26 added big logo [sol@hiqdev.com]
+    - [3aa7251] 2016-08-23 disabled big picture [sol@hiqdev.com]
+    - [c1cd643] 2016-08-22 + themeManger pathDirs config [sol@hiqdev.com]
+
 ## [0.0.1] - 2016-08-22
 
 - Added basics
@@ -40,3 +54,12 @@
 [fb2adfc]: https://github.com/hiqdev/hisite-core/commit/fb2adfc
 [247b676]: https://github.com/hiqdev/hisite-core/commit/247b676
 [1c2bb1e]: https://github.com/hiqdev/hisite-core/commit/1c2bb1e
+[6057c19]: https://github.com/hiqdev/hisite-core/commit/6057c19
+[b52e0d4]: https://github.com/hiqdev/hisite-core/commit/b52e0d4
+[9c77e92]: https://github.com/hiqdev/hisite-core/commit/9c77e92
+[183831d]: https://github.com/hiqdev/hisite-core/commit/183831d
+[8ee7b8e]: https://github.com/hiqdev/hisite-core/commit/8ee7b8e
+[8813158]: https://github.com/hiqdev/hisite-core/commit/8813158
+[89bec27]: https://github.com/hiqdev/hisite-core/commit/89bec27
+[3aa7251]: https://github.com/hiqdev/hisite-core/commit/3aa7251
+[c1cd643]: https://github.com/hiqdev/hisite-core/commit/c1cd643
