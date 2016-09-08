@@ -1,6 +1,6 @@
 # hiqdev/hisite-core
 
-## [Under development]
+## [0.0.2] - 2016-09-03
 
 - Added RenderAction and LoginForm
 - Fixed requirements and params

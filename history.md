@@ -1,11 +1,12 @@
 # hiqdev/hisite-core
 
-## [Under development]
+## [0.0.2] - 2016-09-03
 
 - Added RenderAction and LoginForm
     - [6057c19] 2016-09-02 used LoginForm widget for login page [sol@hiqdev.com]
     - [8813158] 2016-08-28 added RenderAction and used for index, contacts, about, policy [sol@hiqdev.com]
 - Fixed requirements and params
+    - [d84fa8e] 2016-09-03 used empty <- isset [sol@hiqdev.com]
     - [b52e0d4] 2016-09-02 fixed use of params in config [sol@hiqdev.com]
     - [9c77e92] 2016-09-01 + powered by params [sol@hiqdev.com]
     - [183831d] 2016-09-01 + require hiqdev/yii2-thememanager [sol@hiqdev.com]
@@ -63,3 +64,4 @@
 [89bec27]: https://github.com/hiqdev/hisite-core/commit/89bec27
 [3aa7251]: https://github.com/hiqdev/hisite-core/commit/3aa7251
 [c1cd643]: https://github.com/hiqdev/hisite-core/commit/c1cd643
+[d84fa8e]: https://github.com/hiqdev/hisite-core/commit/d84fa8e
