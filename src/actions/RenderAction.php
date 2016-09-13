@@ -3,6 +3,7 @@
 namespace hisite\actions;
 
 use Closure;
+use yii\helpers\Inflector;
 
 /**
  * This action renders views.
@@ -69,7 +70,7 @@ class RenderAction extends \yii\base\Action
      */
     public function getViewName()
     {
-        return $this->view ?: $this->controller->action->id;
+        return $this->view ?: lcfirst(Inflector::id2camel($this->controller->action->id));
     }
 
     /**
