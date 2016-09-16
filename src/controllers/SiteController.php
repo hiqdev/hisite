@@ -12,9 +12,12 @@
 namespace hisite\controllers;
 
 use Yii;
+use yii\captcha\CaptchaAction;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\web\Controller;
+use yii\web\ErrorAction;
+use hisite\actions\RenderAction;
 use hisite\models\LoginForm;
 use hisite\models\ContactForm;
 
@@ -27,7 +30,7 @@ class SiteController extends Controller
     {
         return [
             'access' => [
-                'class' => AccessControl::className(),
+                'class' => AccessControl::class,
                 'only' => ['logout'],
                 'rules' => [
                     [
@@ -38,7 +41,7 @@ class SiteController extends Controller
                 ],
             ],
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'logout' => ['post'],
                 ],
@@ -53,23 +56,23 @@ class SiteController extends Controller
     {
         return [
             'error' => [
-                'class' => \yii\web\ErrorAction::class,
+                'class' => ErrorAction::class,
             ],
             'captcha' => [
-                'class' => \yii\captcha\CaptchaAction::class,
+                'class' => CaptchaAction::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
             'index' => [
-                'class' => \hisite\actions\RenderAction::class,
+                'class' => RenderAction::class,
             ],
             'contacts' => [
-                'class' => \hisite\actions\RenderAction::class,
+                'class' => RenderAction::class,
             ],
             'about' => [
-                'class' => \hisite\actions\RenderAction::class,
+                'class' => RenderAction::class,
             ],
             'policy' => [
-                'class' => \hisite\actions\RenderAction::class,
+                'class' => RenderAction::class,
             ],
         ];
     }
