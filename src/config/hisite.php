@@ -80,13 +80,6 @@ return [
                         'hisite' => 'hisite.php',
                     ],
                 ],
-                'hisite/page' => [
-                    'class' => \yii\i18n\PhpMessageSource::class,
-                    'basePath' => '@hisite/messages',
-                    'fileMap' => [
-                        'page' => 'page.php',
-                    ],
-                ],
             ],
         ],
     ],
