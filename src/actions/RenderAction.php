@@ -6,10 +6,10 @@ use Closure;
 use yii\helpers\Inflector;
 
 /**
- * This action renders views.
+ * This action renders view.
  *
- * @property array params that will be passed to the view.
- * Every element can be a callback, which gets the model and $this pointer as arguments
+ * @property array|Closure $params that will be passed to the view.
+ * Every element can be a callback, which gets $this pointer as argument.
  */
 class RenderAction extends \yii\base\Action
 {
@@ -40,9 +40,10 @@ class RenderAction extends \yii\base\Action
             $res = call_user_func($this->_params, $this);
         } else {
             foreach ($this->_params as $k => $v) {
-                $res[$k] = $v instanceof Closure ? call_user_func($v, $this, $this->getModel()) : $v;
+                $res[$k] = $v instanceof Closure ? call_user_func($v, $this) : $v;
             }
         }
+
         return array_merge($res, $this->prepareData($res));
     }
 

@@ -11,15 +11,14 @@
 
 namespace hisite\controllers;
 
-use Yii;
-use yii\captcha\CaptchaAction;
-use yii\web\Controller;
-use yii\web\ErrorAction;
 use hisite\actions\RenderAction;
 use hisite\models\LoginForm;
 use hisite\models\ContactForm;
+use Yii;
+use yii\captcha\CaptchaAction;
+use yii\web\ErrorAction;
 
-class SiteController extends Controller
+class SiteController extends \yii\web\Controller
 {
     /**
      * {@inheritdoc}
@@ -37,13 +36,13 @@ class SiteController extends Controller
             'index' => [
                 'class' => RenderAction::class,
             ],
-            'contacts' => [
-                'class' => RenderAction::class,
-            ],
             'about' => [
                 'class' => RenderAction::class,
             ],
             'policy' => [
+                'class' => RenderAction::class,
+            ],
+            'contacts' => [
                 'class' => RenderAction::class,
             ],
         ];
@@ -51,7 +50,6 @@ class SiteController extends Controller
 
     /**
      * Login action.
-     *
      * @return string
      */
     public function actionLogin()
@@ -72,7 +70,6 @@ class SiteController extends Controller
 
     /**
      * Logout action.
-     *
      * @return string
      */
     public function actionLogout()
@@ -83,8 +80,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Displays contact page.
-     *
+     * Displays contact page and sends contact form.
      * @return string
      */
     public function actionContact()
