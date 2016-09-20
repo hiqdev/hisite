@@ -4,6 +4,7 @@ namespace hisite\actions;
 
 use Closure;
 use Yii;
+use yii\base\Response;
 use yii\helpers\Url;
 
 /**
@@ -39,6 +40,8 @@ class RedirectAction extends \yii\base\Action
 
     public function run()
     {
-        return $this->controller->redirect($this->getUrl());
+        $url = $this->getUrl();
+
+        return $url instanceof Response ? $url : $this->controller->redirect($url);
     }
 }
