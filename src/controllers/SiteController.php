@@ -63,9 +63,7 @@ class SiteController extends \yii\web\Controller
             return $this->goBack();
         }
 
-        return $this->render('login', [
-            'model' => $model,
-        ]);
+        return $this->render('login', compact('model'));
     }
 
     /**
@@ -75,8 +73,9 @@ class SiteController extends \yii\web\Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
+        $back = Yii::$app->request->post('back') ?: Yii::$app->request->get('back');
 
-        return $this->goHome();
+        return $back ? $this->redirect($back) : $this->goHome();
     }
 
     /**
@@ -92,9 +91,7 @@ class SiteController extends \yii\web\Controller
             return $this->refresh();
         }
 
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+        return $this->render('contact', compact('model'));
     }
 
 }
