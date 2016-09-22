@@ -63,9 +63,9 @@ return [
             ],
         ],
         'menuManager' => [
-            'menus' => [
-                'main' => \hisite\MainMenu::class,
-                'footer' => \hisite\FooterMenu::class,
+            'items' => [
+                'main' => \hisite\menus\MainMenu::class,
+                'footer' => \hisite\menus\FooterMenu::class,
             ],
         ],
         'themeManager' => [
