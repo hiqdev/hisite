@@ -24,7 +24,9 @@ return [
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log' => 'log',
+    ],
     'components' => [
         'request' => [
             'enableCsrfCookie' => true, /// XXX TO BE DISABLED
