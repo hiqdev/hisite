@@ -69,8 +69,9 @@ return [
             ],
         ],
         'themeManager' => [
-            'themedPaths' => [
-                'hisite' => '@hisite/views',
+            'pathMap' => [
+                '@hisite/views' => '$themedViewPaths',
+                '$themedViewPaths' => ['@hisite/views'],
             ],
         ],
         'i18n' => [
