@@ -69,7 +69,7 @@ return [
             ],
         ],
         'themeManager' => [
-            'viewPaths' => [
+            'themedPaths' => [
                 'hisite' => '@hisite/views',
             ],
         ],
