@@ -9,4 +9,7 @@
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
-return [];
+return [
+    'Terms of use' => 'Правила использования',
+    'Privacy policy' => 'Политика конфиденциальности',
+];
