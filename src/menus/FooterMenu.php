@@ -9,9 +9,8 @@
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hisite;
+namespace hisite\menus;
 
 class FooterMenu extends MainMenu
 {
-    protected $_addTo = 'footer';
 }

@@ -9,17 +9,15 @@
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hisite;
+namespace hisite\menus;
 
 use Yii;
 
 class MainMenu extends \hiqdev\menumanager\Menu
 {
-    protected $_addTo = 'main';
-
     public function items()
     {
-        $login = Yii::$app->user->isGuest ? 'login' : 'logout';
+        $logOp = Yii::$app->user->isGuest ? 'login' : 'logout';
 
         return [
             'home' => [
@@ -34,9 +32,9 @@ class MainMenu extends \hiqdev\menumanager\Menu
                 'label' => Yii::t('hisite', 'Contact'),
                 'url' => ['/site/contact'],
             ],
-            'login' => [
-                'label' => Yii::t('hisite', ucfirst($login)),
-                'url' => ['/site/' . $login],
+            $logOp => [
+                'label' => Yii::t('hisite', ucfirst($logOp)),
+                'url' => ['/site/' . $logOp],
             ],
         ];
     }

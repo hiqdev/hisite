@@ -70,7 +70,6 @@ return [
         ],
         'themeManager' => [
             'pathMap' => [
-                '@hisite/views' => '$themedViewPaths',
                 '$themedViewPaths' => ['@hisite/views'],
             ],
         ],
