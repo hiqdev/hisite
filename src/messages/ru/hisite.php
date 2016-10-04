@@ -12,4 +12,7 @@
 return [
     'Terms of use' => 'Правила использования',
     'Privacy policy' => 'Политика конфиденциальности',
+    'Management packages' => 'Пакеты управления',
+    'DNS management packs' => 'Пакеты управления DNS',
+    'Comparing the basic and premium DNS management pack' => 'Таблица сравнения базового и премиум-пакета управления DNS',
 ];
