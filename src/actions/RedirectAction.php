@@ -8,6 +8,8 @@ use yii\base\Response;
 use yii\helpers\Url;
 
 /**
+ * Action to redirect to given url.
+ *
  * @property array|string|Closure url the URL for redirect. Can be string, array or Closure
  */
 class RedirectAction extends \yii\base\Action
