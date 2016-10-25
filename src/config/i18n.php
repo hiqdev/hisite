@@ -1,12 +1,12 @@
 <?php
 
 /*
- * Theme Manager for Yii2
+ * HiSite core package
  *
- * @link      https://github.com/hiqdev/yii2-thememanager
- * @package   yii2-thememanager
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2015-2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
 return [

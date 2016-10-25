@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Hisite core package
+ * HiSite core package
  *
  * @link      https://github.com/hiqdev/hisite-core
  * @package   hisite-core
@@ -93,5 +93,4 @@ class SiteController extends \yii\web\Controller
 
         return $this->render('contact', compact('model'));
     }
-
 }

@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * HiSite core package
+ *
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hisite\actions;
 
 use Closure;
@@ -9,12 +18,12 @@ use yii\helpers\Inflector;
  * This action renders view.
  *
  * @property array|Closure $params that will be passed to the view.
- * Every element can be a callback, which gets $this pointer as argument.
+ * Every element can be a callback, which gets $this pointer as argument
  */
 class RenderAction extends \yii\base\Action
 {
     /**
-     * @var string view to render.
+     * @var string view to render
      */
     public $view;
 
@@ -50,7 +59,7 @@ class RenderAction extends \yii\base\Action
     /**
      * Prepares additional data for render.
      *
-     * @param $data array Additional data, prepared by other classes. Optional.
+     * @param $data array Additional data, prepared by other classes. Optional
      * @return array
      */
     public function prepareData($data = [])
@@ -82,4 +91,3 @@ class RenderAction extends \yii\base\Action
         return $this->controller->render($this->getViewName(), $this->getParams());
     }
 }
-

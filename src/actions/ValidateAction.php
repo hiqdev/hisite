@@ -1,15 +1,23 @@
 <?php
 
+/*
+ * HiSite core package
+ *
+ * @link      https://github.com/hiqdev/hisite-core
+ * @package   hisite-core
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
+
 namespace hisite\actions;
 
 use Yii;
 use yii\web\Response;
 use yii\di\Instance;
-use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
 /**
- * Action to validate form with
+ * Action to validate form with.
  */
 class ValidateAction extends \yii\base\Action
 {
@@ -27,4 +35,3 @@ class ValidateAction extends \yii\base\Action
         return ActiveForm::validate($model);
     }
 }
-

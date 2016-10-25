@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOF
-Hisite core package
+HiSite core package
 
 @link      https://github.com/hiqdev/hisite-core
 @package   hisite-core
