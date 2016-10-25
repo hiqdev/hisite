@@ -36,6 +36,9 @@ php-cs-fixer.phar
 phpunit-skelgen.phar
 phpunit.phar
 
+# Binaries
+ocular.phar
+
 # HiSite files
 /src/config/bootstrap.php
 /src/config/defines.php
