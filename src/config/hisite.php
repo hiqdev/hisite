@@ -32,6 +32,11 @@ return [
             'enableCsrfCookie' => true, /// XXX TO BE DISABLED
             'cookieValidationKey' => empty($params['cookieValidationKey']) ? null : $params['cookieValidationKey'],
         ],
+        'mailer' => [
+            'viewPath' => '@hisite/views/mail',
+            'htmlLayout' => '@hisite/views/layouts/mail-html',
+            'textLayout' => '@hisite/views/layouts/mail-text',
+        ],
         'cache' => [
             'class' => \yii\caching\FileCache::class,
         ],
