@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
-return [
+return array_filter([
     'id' => 'hisite',
     'name' => 'HiSite',
     'aliases' => [
@@ -24,9 +24,10 @@ return [
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
-    'bootstrap' => [
+    'bootstrap' => array_filter([
         'log' => 'log',
-    ],
+        'debug' => defined('YII_DEBUG') && YII_DEBUG ? 'debug' : null,
+    ]),
     'components' => [
         'request' => [
             'enableCsrfCookie' => true, /// XXX TO BE DISABLED
@@ -90,4 +91,10 @@ return [
             ],
         ],
     ],
-];
+    'modules' => array_filter([
+        'debug' => defined('YII_DEBUG') && YII_DEBUG ? [
+            'class' => \yii\debug\Module::class,
+            'allowedIPs' => $params['debug.allowedIps'],
+        ] : null,
+    ]),
+]);
