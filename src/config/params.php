@@ -12,4 +12,5 @@
 return [
     'poweredByName' => 'Yii2 & HiSite',
     'poweredByUrl'  => 'https://github.com/hiqdev/hisite-core',
+    'debug.allowedIps' => []
 ];
