@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiSite core package
  *
  * @link      https://github.com/hiqdev/hisite-core
@@ -12,8 +11,8 @@
 namespace hisite\controllers;
 
 use hisite\actions\RenderAction;
-use hisite\models\LoginForm;
 use hisite\models\ContactForm;
+use hisite\models\LoginForm;
 use Yii;
 use yii\captcha\CaptchaAction;
 use yii\web\ErrorAction;

@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiSite core package
  *
  * @link      https://github.com/hiqdev/hisite-core
@@ -12,5 +11,5 @@
 return [
     'poweredByName' => 'Yii2 & HiSite',
     'poweredByUrl'  => 'https://github.com/hiqdev/hisite-core',
-    'debug.allowedIps' => []
+    'debug.allowedIps' => [],
 ];

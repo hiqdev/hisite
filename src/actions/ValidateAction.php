@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiSite core package
  *
  * @link      https://github.com/hiqdev/hisite-core
@@ -12,8 +11,8 @@
 namespace hisite\actions;
 
 use Yii;
-use yii\web\Response;
 use yii\di\Instance;
+use yii\web\Response;
 use yii\widgets\ActiveForm;
 
 /**

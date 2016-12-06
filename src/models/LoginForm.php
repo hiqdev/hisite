@@ -1,6 +1,5 @@
 <?php
-
-/*
+/**
  * HiSite core package
  *
  * @link      https://github.com/hiqdev/hisite-core
