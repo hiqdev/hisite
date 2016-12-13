@@ -10,6 +10,7 @@
 
 namespace hisite\controllers;
 
+use hisite\actions\ContactAction;
 use hisite\actions\RenderAction;
 use hisite\models\ContactForm;
 use hisite\models\LoginForm;
@@ -30,7 +31,7 @@ class SiteController extends \yii\web\Controller
             ],
             'captcha' => [
                 'class' => CaptchaAction::class,
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                'fixedVerifyCode' => YII_ENV_DEV ? 'testme' : null,
                 'backColor' => 0x222222,
                 'foreColor' => 0xFFFFFF,
             ],
@@ -47,7 +48,7 @@ class SiteController extends \yii\web\Controller
                 'class' => RenderAction::class,
             ],
             'contact' => [
-                'class' => RenderAction::class,
+                'class' => ContactAction::class,
             ],
         ];
     }
