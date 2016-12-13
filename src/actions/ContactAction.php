@@ -15,14 +15,16 @@ class ContactAction extends \yii\base\Action
 
     public function run()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
+        if (Yii::$app->request->isPost) {
+            $model = new ContactForm();
+            if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+                Yii::$app->session->setFlash('contactFormSubmitted');
 
-            if ($this->redirect) {
-                return $this->controller->redirect(['/', '#' => $this->anchor]);
-            } else {
-                return $this->controller->refresh('#' . $this->anchor);
+                if ($this->redirect) {
+                    return $this->controller->redirect(['/', '#' => $this->anchor]);
+                } else {
+                    return $this->controller->refresh('#' . $this->anchor);
+                }
             }
         }
     }
