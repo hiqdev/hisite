@@ -31,6 +31,8 @@ class SiteController extends \yii\web\Controller
             'captcha' => [
                 'class' => CaptchaAction::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                'backColor' => 0x222222,
+                'foreColor' => 0xFFFFFF,
             ],
             'index' => [
                 'class' => RenderAction::class,
