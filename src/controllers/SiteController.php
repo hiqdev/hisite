@@ -36,6 +36,9 @@ class SiteController extends \yii\web\Controller
             ],
             'index' => [
                 'class' => RenderAction::class,
+                'data' => function () {
+                    return ['formModel' => new ContactForm()];
+                },
             ],
             'about' => [
                 'class' => RenderAction::class,
@@ -43,7 +46,7 @@ class SiteController extends \yii\web\Controller
             'policy' => [
                 'class' => RenderAction::class,
             ],
-            'contacts' => [
+            'contact' => [
                 'class' => RenderAction::class,
             ],
         ];
