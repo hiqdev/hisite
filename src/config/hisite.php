@@ -24,6 +24,7 @@ return array_filter([
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
     'bootstrap' => array_filter([
+        'language' => 'language',
         'log' => 'log',
         'debug' => defined('YII_DEBUG') && YII_DEBUG ? 'debug' : null,
     ]),
@@ -91,6 +92,12 @@ return array_filter([
         ],
     ],
     'modules' => array_filter([
+        'language' => [
+            'languages' => [
+                'ru' => 'Русский',
+                'en' => 'English',
+            ],
+        ],
         'debug' => defined('YII_DEBUG') && YII_DEBUG ? [
             'class' => \yii\debug\Module::class,
             'allowedIPs' => $params['debug.allowedIps'],
