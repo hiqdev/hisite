@@ -47,7 +47,6 @@
         "yiisoft/yii2": "^2.0",
         "hiqdev/hidev-hisite": "<2.0 || dev-master",
         "hiqdev/yii2-menus": "<2.0 || dev-master",
-        "hiqdev/yii2-menumanager": "<2.0 || dev-master",
         "hiqdev/yii2-thememanager": "<2.0 || dev-master",
         "hiqdev/yii2-language": "<2.0 || dev-master"
     },
