@@ -68,12 +68,6 @@ return array_filter([
                 '<_c:[\w\-]+>/<_a:[\w\-]+>/<id:\d+>' => '<_c>/<_a>',
             ],
         ],
-        'menuManager' => [
-            'items' => [
-                'main' => \hisite\menus\MainMenu::class,
-                'footer' => \hisite\menus\FooterMenu::class,
-            ],
-        ],
         'themeManager' => [
             'pathMap' => [
                 '$themedViewPaths' => ['@hisite/views'],
@@ -103,4 +97,14 @@ return array_filter([
             'allowedIPs' => $params['debug.allowedIps'],
         ] : null,
     ]),
+    'container' => [
+        'definitions' => [
+            \hiqdev\thememanager\menus\AbstractMainMenu::class => [
+                'class' => \hipanel\menus\MainMenu::class,
+            ],
+            \hiqdev\thememanager\menus\AbstractFooterMenu::class => [
+                'class' => \hipanel\menus\FooterMenu::class,
+            ],
+        ],
+    ],
 ]);
