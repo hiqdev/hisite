@@ -46,7 +46,7 @@ return array_filter([
             'enableAutoLogin' => true,
         ],
         'log' => [
-            'traceLevel' => defined('YII_DEBUG') && YII_DEBUG ? 3 : 0,
+            'traceLevel' => defined('YII_DEBUG_MODULE') && YII_DEBUG_MODULE ? 3 : 0,
             'targets' => [
                 'default' => [
                     'class' => \yii\log\FileTarget::class,
