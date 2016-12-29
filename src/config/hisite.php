@@ -92,7 +92,7 @@ return array_filter([
                 'en' => 'English',
             ],
         ],
-        'debug' => defined('YII_DEBUG') && YII_DEBUG ? [
+        'debug' => defined('YII_DEBUG_MODULE') && YII_DEBUG_MODULE ? [
             'class' => \yii\debug\Module::class,
             'allowedIPs' => $params['debug.allowedIps'],
         ] : null,
