@@ -92,6 +92,11 @@ return array_filter([
         ] : null,
     ]),
     'container' => [
+        'singletons' => [
+            \yii\base\Application::class => function () {
+                return Yii::$app;
+            },
+        ],
         'definitions' => [
             \hiqdev\thememanager\menus\AbstractMainMenu::class => [
                 'class' => \hipanel\menus\MainMenu::class,
