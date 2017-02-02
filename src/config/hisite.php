@@ -25,7 +25,7 @@ return array_filter([
     'bootstrap' => array_filter([
         'language' => 'language',
         'log' => 'log',
-        'debug' => defined('YII_DEBUG_MODULE') && YII_DEBUG_MODULE ? 'debug' : null,
+        'debug' => empty($params['debug.enabled']) ? null : 'debug',
     ]),
     'components' => [
         'request' => [
@@ -86,10 +86,10 @@ return array_filter([
                 'en' => 'English',
             ],
         ],
-        'debug' => defined('YII_DEBUG_MODULE') && YII_DEBUG_MODULE ? [
+        'debug' => empty($params['debug.enabled']) ? null : [
             'class' => \yii\debug\Module::class,
             'allowedIPs' => $params['debug.allowedIps'],
-        ] : null,
+        ],
     ]),
     'container' => [
         'singletons' => [
