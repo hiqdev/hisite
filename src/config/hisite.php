@@ -96,6 +96,9 @@ return array_filter([
             \yii\base\Application::class => function () {
                 return Yii::$app;
             },
+            \yii\mail\MailerInterface::class => function () {
+                return Yii::$app->get('mailer');
+            },
         ],
         'definitions' => [
             \hiqdev\thememanager\menus\AbstractMainMenu::class => [
