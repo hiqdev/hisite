@@ -86,10 +86,11 @@ return array_filter([
                 'en' => 'English',
             ],
         ],
-        'debug' => empty($params['debug.enabled']) ? null : [
+        'debug' => empty($params['debug.enabled']) ? null : array_filter([
             'class' => \yii\debug\Module::class,
             'allowedIPs' => $params['debug.allowedIps'],
-        ],
+            'historySize' => $params['debug.historySize'] ? $params['debug.historySize'] : null,
+        ]),
     ]),
     'container' => [
         'singletons' => [
