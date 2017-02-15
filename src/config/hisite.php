@@ -88,8 +88,8 @@ return array_filter([
         ],
         'debug' => empty($params['debug.enabled']) ? null : array_filter([
             'class' => \yii\debug\Module::class,
-            'allowedIPs' => $params['debug.allowedIps'],
-            'historySize' => $params['debug.historySize'] ? $params['debug.historySize'] : null,
+            'allowedIPs' => isset($params['debug.allowedIps']) ? $params['debug.allowedIps'] : null,
+            'historySize' => isset($params['debug.historySize']) ? $params['debug.historySize'] : null,
         ]),
     ]),
     'container' => [
