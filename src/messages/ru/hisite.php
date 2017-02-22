@@ -29,4 +29,6 @@ return [
     'About' => 'О нас',
     'Contact' => 'Контакты',
     'Home' => 'Главная',
+    'tech support' => 'техническая поддержка',
+    'All rights reserved.' => 'Все права защищены.',
 ];
