@@ -41,7 +41,6 @@ ocular.phar
 
 # HiSite files
 /src/config/bootstrap.php
-/src/config/defines.php
 /src/config/hidev.php
 /src/config/web.php
 /web
