@@ -1,15 +1,15 @@
 <?php
 /**
- * hipanel.ahnames.com
+ * HiSite Yii2 base project
  *
- * @link      http://ahnames.com/
- * @package   hipanel.ahnames.com
- * @license   proprietary
- * @copyright Copyright (c) 2016-2017, AHnames (https://ahnames.com/)
+ * @link      https://github.com/hiqdev/hisite
+ * @package   hisite
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
 if (!defined('HISITE_ROOT_DIR')) {
-    fwrite(STDERR, "HISITE_ROOT_DIR constant must be defined");
+    fwrite(STDERR, 'HISITE_ROOT_DIR constant must be defined');
     exit(1);
 }
 
