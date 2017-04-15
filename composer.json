@@ -1,19 +1,19 @@
 {
-    "name": "hiqdev/hisite-core",
+    "name": "hiqdev/hisite",
     "type": "yii2-extension",
-    "description": "HiSite core package",
+    "description": "HiSite Yii2 base project",
     "keywords": [
         "yii2",
         "hisite",
         "core"
     ],
-    "homepage": "https://github.com/hiqdev/hisite-core",
+    "homepage": "https://github.com/hiqdev/hisite",
     "license": "BSD-3-Clause",
     "support": {
         "email": "support@hiqdev.com",
-        "source": "https://github.com/hiqdev/hisite-core",
-        "issues": "https://github.com/hiqdev/hisite-core/issues",
-        "wiki": "https://github.com/hiqdev/hisite-core/wiki",
+        "source": "https://github.com/hiqdev/hisite",
+        "issues": "https://github.com/hiqdev/hisite/issues",
+        "wiki": "https://github.com/hiqdev/hisite/wiki",
         "forum": "http://forum.hiqdev.com/"
     },
     "authors": [
@@ -26,19 +26,19 @@
         {
             "name": "Dmitry Naumenko",
             "role": "Lead backend developer",
-            "email": "silverfire@hiqdev.com",
+            "email": "d.naumenko.a@gmail.com",
             "homepage": "http://silverfire.me/"
         },
         {
             "name": "Andrey Klochok",
             "role": "Lead frontend developer",
-            "email": "tafid@hiqdev.com",
+            "email": "andreyklochok@gmail.com",
             "homepage": "http://hiqdev.com/"
         },
         {
             "name": "Yuriy Myronchuk",
             "role": "QA Lead",
-            "email": "bladeroot@hiqdev.com",
+            "email": "bladeroot@gmail.com",
             "homepage": "http://hiqdev.com/"
         }
     ],
