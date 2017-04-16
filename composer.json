@@ -46,7 +46,7 @@
         "php": "^5.6|^7.0",
         "yiisoft/yii2": "^2.0",
         "vlucas/phpdotenv": "^2.4",
-        "hiqdev/hidev-hisite": "<2.0 || dev-master",
+        "hiqdev/hidev-webapp": "<2.0 || dev-master",
         "hiqdev/yii2-menus": "<2.0 || dev-master",
         "hiqdev/yii2-thememanager": "<2.0 || dev-master",
         "hiqdev/yii2-language": "<2.0 || dev-master"
