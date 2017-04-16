@@ -15,6 +15,6 @@ return [
     'debug.enabled'     => false,
     'debug.allowedIps'  => [],
 
-    'poweredByName'     => 'Yii2 & HiSite',
-    'poweredByUrl'      => 'https://github.com/hiqdev/hisite',
+    'poweredBy.name'    => 'Yii2 & HiSite',
+    'poweredBy.url'     => 'https://github.com/hiqdev/hisite',
 ];
