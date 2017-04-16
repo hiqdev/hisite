@@ -103,10 +103,10 @@ return array_filter([
         ],
         'definitions' => [
             \hiqdev\thememanager\menus\AbstractMainMenu::class => [
-                'class' => \hipanel\menus\MainMenu::class,
+                'class' => \hisite\menus\MainMenu::class,
             ],
             \hiqdev\thememanager\menus\AbstractFooterMenu::class => [
-                'class' => \hipanel\menus\FooterMenu::class,
+                'class' => \hisite\menus\FooterMenu::class,
             ],
         ],
     ],
