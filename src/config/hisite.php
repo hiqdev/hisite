@@ -9,8 +9,8 @@
  */
 
 return array_filter([
-    'id' => 'hisite',
-    'name' => 'HiSite',
+    'id' => $params['app.id'],
+    'name' => $params['app.name'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',

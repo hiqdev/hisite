@@ -9,7 +9,12 @@
  */
 
 return [
-    'poweredByName' => 'Yii2 & HiSite',
-    'poweredByUrl'  => 'https://github.com/hiqdev/hisite-core',
-    'debug.allowedIps' => [],
+    'app.id'            => 'hisite',
+    'app.name'          => 'HiSite',
+
+    'debug.enabled'     => false,
+    'debug.allowedIps'  => [],
+
+    'poweredByName'     => 'Yii2 & HiSite',
+    'poweredByUrl'      => 'https://github.com/hiqdev/hisite',
 ];
