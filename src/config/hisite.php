@@ -23,19 +23,20 @@ return array_filter([
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
     'bootstrap' => array_filter([
-        'language' => 'language',
         'log' => 'log',
         'debug' => empty($params['debug.enabled']) ? null : 'debug',
     ]),
     'components' => [
         'request' => [
             'enableCsrfCookie' => true, /// XXX TO BE DISABLED
-            'cookieValidationKey' => empty($params['cookieValidationKey']) ? null : $params['cookieValidationKey'],
+            'cookieValidationKey' => $params['cookieValidationKey'],
         ],
         'mailer' => [
+            'class' => \yii\swiftmailer\Mailer::class,
             'viewPath' => '@hisite/views/mail',
             'htmlLayout' => '@hisite/views/layouts/mail-html',
             'textLayout' => '@hisite/views/layouts/mail-text',
+            'useFileTransport' => $params['mailer.enabled'] ? false : true,
         ],
         'cache' => [
             'class' => \yii\caching\FileCache::class,
@@ -43,15 +44,6 @@ return array_filter([
         'user' => [
             'identityClass' => \hisite\models\User::class,
             'enableAutoLogin' => true,
-        ],
-        'log' => [
-            'traceLevel' => defined('YII_DEBUG') && YII_DEBUG ? 3 : 0,
-            'targets' => [
-                'default' => [
-                    'class' => \yii\log\FileTarget::class,
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -80,16 +72,10 @@ return array_filter([
         ],
     ],
     'modules' => array_filter([
-        'language' => [
-            'languages' => [
-                'ru' => 'Русский',
-                'en' => 'English',
-            ],
-        ],
         'debug' => empty($params['debug.enabled']) ? null : array_filter([
             'class' => \yii\debug\Module::class,
-            'allowedIPs' => isset($params['debug.allowedIps']) ? $params['debug.allowedIps'] : null,
-            'historySize' => isset($params['debug.historySize']) ? $params['debug.historySize'] : null,
+            'allowedIPs' => $params['debug.allowedIps'],
+            'historySize' => $params['debug.historySize'],
         ]),
     ]),
     'container' => [

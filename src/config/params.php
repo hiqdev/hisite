@@ -9,14 +9,19 @@
  */
 
 return [
-    'app.id'            => 'hisite',
-    'app.name'          => 'HiSite',
+    'app.id'                => 'hisite',
+    'app.name'              => 'HiSite',
 
-    'favicon.ico'       => '@hisite/assets/images/favicon.ico',
+    'favicon.ico'           => '@hisite/assets/images/favicon.ico',
 
-    'debug.enabled'     => false,
-    'debug.allowedIps'  => [],
+    'debug.enabled'         => null,
+    'debug.allowedIps'      => [],
+    'debug.historySize'     => 100,
 
-    'poweredBy.name'    => 'Yii2 & HiSite',
-    'poweredBy.url'     => 'https://github.com/hiqdev/hisite',
+    'mailer.enabled'        => null,
+
+    'cookieValidationKey'   => null,
+
+    'poweredBy.name'        => 'Yii2 & HiSite',
+    'poweredBy.url'         => 'https://github.com/hiqdev/hisite',
 ];
