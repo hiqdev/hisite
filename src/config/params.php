@@ -12,6 +12,8 @@ return [
     'app.id'            => 'hisite',
     'app.name'          => 'HiSite',
 
+    'favicon.ico'       => '@hisite/assets/images/favicon.ico',
+
     'debug.enabled'     => false,
     'debug.allowedIps'  => [],
 
