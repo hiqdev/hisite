@@ -49,8 +49,7 @@
         "vlucas/phpdotenv": "^2.4",
         "hiqdev/hidev-webapp": "<2.0 || dev-master",
         "hiqdev/yii2-menus": "<2.0 || dev-master",
-        "hiqdev/yii2-thememanager": "<2.0 || dev-master",
-        "hiqdev/yii2-language": "<2.0 || dev-master"
+        "hiqdev/yii2-thememanager": "<2.0 || dev-master"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0 || dev-master",
