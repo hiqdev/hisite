@@ -9,39 +9,54 @@
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hisite.svg)](https://scrutinizer-ci.com/g/hiqdev/hisite/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:hisite/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hisite/dev-master)
 
-HiSite is a base project for building Yii2 sites from components.
+HiSite is a base project for building Yii2 web applications from plugins.
+
+## Installation
+
+For installation instructions see template project built with HiSite:
+
+https://github.com/hiqdev/hisite-template
+
+## Idea
+
+HiSIte provides base for creating Yii2 web application.
+It is similar in functional to `yii2-app-basic` but in contrast to it
+HiSite is a plugin and you require it with composer instead of copy-pasting.
 
 Article describing the idea behind HiSite coming soon...
 
-This project includes:
+HiSite includes:
 
-- [yii2-swiftmailer] - SwiftMailer support
+- [yii2-swiftmailer] - [SwiftMailer] support
 - [phpdotenv] - for `.env` support
 - [yii2-menus] - pluggable menus
 - [yii2-thememanager] - pluggable themes
 
+[SwiftMailer]:          http://swiftmailer.org/
 [yii2-swiftmailer]:     https://github.com/yiisoft/yii2-swiftmailer
 [phpdotenv]:            https://github.com/vlucas/phpdotenv
 [yii2-menus]:           https://hiqdev.com/packages/yii2-menus
 [yii2-thememanager]:    https://hiqdev.com/packages/yii2-thememanager
 
-## Installation
+## Configuration
 
-The preferred way to install this yii2-extension is through [composer](http://getcomposer.org/download/).
+This extension is supposed to be used with [composer-config-plugin].
 
-Either run
+Also you can use it usual way by copy-pasting config.
+Look [src/config/hisite.php] for cofiguration example.
 
-```sh
-php composer.phar require "hiqdev/hisite"
-```
+Available configuration parameters:
 
-or add
+- `app.id`
+- `app.name`
+- `debug.enabled`
+- `debug.allowedIps`
 
-```json
-"hiqdev/hisite": "*"
-```
+For more details please see [src/config/params.php].
 
-to the require section of your composer.json.
+[composer-config-plugin]:   https://github.com/hiqdev/composer-config-plugin
+[src/config/hisite.php]:    src/config/hisite.php
+[src/config/params.php]:    src/config/params.php
 
 ## License
 

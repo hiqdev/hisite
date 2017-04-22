@@ -5,19 +5,5 @@ package:
     headline:       HiSite
     keywords:       yii2, hisite, core
     namespace:      hisite
-    description: |
-        HiSite is a base project for building Yii2 sites from components.
-
-        Article describing the idea behind HiSite coming soon...
-
-        This project includes:
-
-        - [yii2-swiftmailer] - SwiftMailer support
-        - [phpdotenv] - for `.env` support
-        - [yii2-menus] - pluggable menus
-        - [yii2-thememanager] - pluggable themes
-
-        [yii2-swiftmailer]:     https://github.com/yiisoft/yii2-swiftmailer
-        [phpdotenv]:            https://github.com/vlucas/phpdotenv
-        [yii2-menus]:           https://hiqdev.com/packages/yii2-menus
-        [yii2-thememanager]:    https://hiqdev.com/packages/yii2-thememanager
+    description:    |
+        HiSite is a base project for building Yii2 web applications from plugins.
