@@ -9,7 +9,9 @@
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/hisite.svg)](https://scrutinizer-ci.com/g/hiqdev/hisite/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:hisite/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:hisite/dev-master)
 
-HiSite is a base project for building Yii2 web applications from plugins.
+HiSite is a base project for building modular [Yii2] web applications from plugins.
+
+[yii2]: http://www.yiiframework.com/
 
 ## Installation
 

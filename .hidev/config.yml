@@ -4,6 +4,7 @@ package:
     title:          HiSite Yii2 base project
     headline:       HiSite
     keywords:       yii2, hisite, core
-    namespace:      hisite
     description:    |
-        HiSite is a base project for building Yii2 web applications from plugins.
+        HiSite is a base project for building modular [Yii2] web applications from plugins.
+
+        [yii2]: http://www.yiiframework.com/
