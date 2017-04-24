@@ -86,8 +86,6 @@ return array_filter([
             \yii\mail\MailerInterface::class => function () {
                 return Yii::$app->get('mailer');
             },
-        ],
-        'definitions' => [
             \hiqdev\thememanager\menus\AbstractMainMenu::class => [
                 'class' => \hisite\menus\MainMenu::class,
             ],
