@@ -22,7 +22,7 @@ https://github.com/hiqdev/hisite-template
 ## Idea
 
 HiSIte provides base for creating Yii2 web application.
-It is similar in functional to `yii2-app-basic` but in contrast to it
+It is similar in functions to `yii2-app-basic` but in contrast
 HiSite is a plugin and you require it with composer instead of copy-pasting.
 
 Article describing the idea behind HiSite coming soon...
