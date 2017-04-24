@@ -48,8 +48,7 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "vlucas/phpdotenv": "^2.4",
         "hiqdev/hidev-webapp": "<2.0 || dev-master",
-        "hiqdev/yii2-menus": "<2.0 || dev-master",
-        "hiqdev/yii2-thememanager": "<2.0 || dev-master"
+        "hiqdev/yii2-menus": "<2.0 || dev-master"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0 || dev-master",
