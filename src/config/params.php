@@ -18,7 +18,7 @@ return [
     'debug.allowedIps'      => [],
     'debug.historySize'     => 100,
 
-    'mailer.enabled'        => null,
+    'mailer.enabled'        => YII_ENV==='prod' ? true : null,
 
     'cookieValidationKey'   => null,
 
