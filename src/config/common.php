@@ -27,10 +27,6 @@ return array_filter([
         'debug' => empty($params['debug.enabled']) ? null : 'debug',
     ]),
     'components' => [
-        'request' => [
-            'enableCsrfCookie' => true, /// XXX TO BE DISABLED
-            'cookieValidationKey' => $params['cookieValidationKey'],
-        ],
         'mailer' => [
             'class' => \yii\swiftmailer\Mailer::class,
             'viewPath' => '@hisite/views/mail',
@@ -48,25 +44,11 @@ return array_filter([
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'urlManager' => [
-            'class' => \yii\web\UrlManager::class,
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'enableStrictParsing' => false,
-        ],
-        'themeManager' => [
-            'pathMap' => [
-                '$themedViewPaths' => ['@hisite/views'],
-            ],
-        ],
         'i18n' => [
             'translations' => [
                 'hisite' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
                     'basePath' => '@hisite/messages',
-                    'fileMap' => [
-                        'hisite' => 'hisite.php',
-                    ],
                 ],
             ],
         ],
@@ -86,12 +68,6 @@ return array_filter([
             \yii\mail\MailerInterface::class => function () {
                 return Yii::$app->get('mailer');
             },
-            \hiqdev\thememanager\menus\AbstractMainMenu::class => [
-                'class' => \hisite\menus\MainMenu::class,
-            ],
-            \hiqdev\thememanager\menus\AbstractFooterMenu::class => [
-                'class' => \hisite\menus\FooterMenu::class,
-            ],
         ],
     ],
 ]);

@@ -63,7 +63,15 @@
         "config-plugin": {
             "defines": "src/config/defines.php",
             "params": "src/config/params.php",
-            "web": "src/config/web.php",
+            "common": "src/config/common.php",
+            "web": [
+                "$common",
+                "src/config/web.php"
+            ],
+            "console": [
+                "$common",
+                "src/config/console.php"
+            ],
             "hisite": "$web"
         }
     },
