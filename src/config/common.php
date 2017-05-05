@@ -24,7 +24,6 @@ return array_filter([
     'controllerNamespace' => 'hisite\controllers',
     'bootstrap' => array_filter([
         'log' => 'log',
-        'debug' => empty($params['debug.enabled']) ? null : 'debug',
     ]),
     'components' => [
         'mailer' => [
@@ -37,13 +36,6 @@ return array_filter([
         'cache' => [
             'class' => \yii\caching\FileCache::class,
         ],
-        'user' => [
-            'identityClass' => \hisite\models\User::class,
-            'enableAutoLogin' => true,
-        ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
         'i18n' => [
             'translations' => [
                 'hisite' => [
@@ -53,13 +45,6 @@ return array_filter([
             ],
         ],
     ],
-    'modules' => array_filter([
-        'debug' => empty($params['debug.enabled']) ? null : array_filter([
-            'class' => \yii\debug\Module::class,
-            'allowedIPs' => $params['debug.allowedIps'],
-            'historySize' => $params['debug.historySize'],
-        ]),
-    ]),
     'container' => [
         'singletons' => [
             \yii\base\Application::class => function () {
