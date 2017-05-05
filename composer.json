@@ -72,6 +72,7 @@
                 "$common",
                 "src/config/console.php"
             ],
+            "hidev": "$console",
             "hisite": "$web"
         }
     },
