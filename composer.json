@@ -63,7 +63,8 @@
         "config-plugin": {
             "defines": "src/config/defines.php",
             "params": "src/config/params.php",
-            "hisite": "src/config/hisite.php"
+            "web": "src/config/web.php",
+            "hisite": "$web"
         }
     },
     "minimum-stability": "dev",
