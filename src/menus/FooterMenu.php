@@ -1,6 +1,6 @@
 <?php
 /**
- * HiSite Yii2 base project
+ * HiSite Yii2 base project.
  *
  * @link      https://github.com/hiqdev/hisite
  * @package   hisite

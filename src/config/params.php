@@ -1,6 +1,6 @@
 <?php
 /**
- * HiSite Yii2 base project
+ * HiSite Yii2 base project.
  *
  * @link      https://github.com/hiqdev/hisite
  * @package   hisite
@@ -18,7 +18,7 @@ return [
     'debug.allowedIps'      => [],
     'debug.historySize'     => 100,
 
-    'mailer.enabled'        => YII_ENV==='prod' ? true : null,
+    'mailer.enabled'        => YII_ENV === 'prod' ? true : null,
 
     'cookieValidationKey'   => null,
 
