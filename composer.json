@@ -64,15 +64,14 @@
             "defines": "src/config/defines.php",
             "params": "src/config/params.php",
             "common": "src/config/common.php",
-            "web": [
-                "$common",
-                "src/config/web.php"
-            ],
             "console": [
                 "$common",
                 "src/config/console.php"
             ],
-            "hidev": "$console",
+            "web": [
+                "$common",
+                "src/config/web.php"
+            ],
             "hisite": "$web"
         }
     },
