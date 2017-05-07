@@ -27,7 +27,7 @@ $this->params['noTitle'] = true;
                     <div class="media-body">
                         <h3 class="media-heading">Building blocks</h3>
                         <p>Main goal of HiSite is to enable easy extending of Yii2 applications
-                        with building blocks &mdash; pluggins: code combined with it's configuration.
+                        with building blocks &mdash; pluggins &mdash; code combined with it's configuration.
                         </p>
                     </div>
                 </div>
