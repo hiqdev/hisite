@@ -55,7 +55,7 @@ $this->params['noTitle'] = true;
                         <ul>
                             <li>pluggable and extandable menus</li>
                             <li>automation with <a href="https://github.com/hiqdev/hidev">hidev</a></li>
-                            <li>what else? ideas?</li>
+                            <li>article describing ideas behind HiSite coming soon</li>
                         </ul>
                     </div>
                 </div>
