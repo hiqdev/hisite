@@ -11,7 +11,7 @@ $this->params['noTitle'] = true;
 <section id="main-slider" class="no-margin center">
     <div class="well">
         <p><img src="<?= $this->assetManager->publish('@hisite/assets/images/big_logo.png')[1] ?>" alt="Yii 2" /></p>
-        <p>HiSite is a base project for building modular Yii2 web applications from plugins</p>
+        <h4>HiSite is a base project for building modular Yii2 web applications from plugins</h4>
         <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" target="_blank">Github</a>
     </div>
 </section>
@@ -26,7 +26,7 @@ $this->params['noTitle'] = true;
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Building blocks</h3>
-                        <p>Main goal of HiSite is to enable easy extending of Yii2 applications
+                        <p>Main goal of HiSite is to enable easy creation and extending of Yii2 applications
                         with building blocks &mdash; pluggins &mdash; code combined with it's configuration.
                         </p>
                     </div>
@@ -40,7 +40,7 @@ $this->params['noTitle'] = true;
                     <div class="media-body">
                         <h3 class="media-heading">Pluggable themes</h3>
                         <p>HiSite uses <a href="https://github.com/hiqdev/yii2-thememanager">yii2-thememanager</a>
-                        theming library to enable changing theme as easy as changing
+                        theming library to enable applying and changing theme as easy as changing
                         single line in <code>composer.json</code>.</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ $this->params['noTitle'] = true;
                     <div class="media-body">
                         <h3 class="media-heading">More...</h3>
                         <ul>
-                            <li>pluggable and extandable menus</li>
+                            <li>pluggable and extandable menus with <a href="https://github.com/hiqdev/yii2-menus">yii2-menus</a></li>
                             <li>automation with <a href="https://github.com/hiqdev/hidev">hidev</a></li>
                             <li>article describing ideas behind HiSite coming soon</li>
                         </ul>

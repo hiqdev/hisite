@@ -11,6 +11,8 @@
 
 HiSite is a base project for building modular [Yii2] web applications from plugins.
 
+You can see a working demo here https://hisite.hiqdev.com/.
+
 [yii2]: http://www.yiiframework.com/
 
 ## Installation
