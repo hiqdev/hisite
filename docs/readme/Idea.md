@@ -14,5 +14,5 @@ HiSite includes:
 [SwiftMailer]:          http://swiftmailer.org/
 [yii2-swiftmailer]:     https://github.com/yiisoft/yii2-swiftmailer
 [phpdotenv]:            https://github.com/vlucas/phpdotenv
-[yii2-menus]:           https://hiqdev.com/packages/yii2-menus
-[yii2-thememanager]:    https://hiqdev.com/packages/yii2-thememanager
+[yii2-menus]:           https://github.com/hiqdev/yii2-menus
+[yii2-thememanager]:    https://github.com/hiqdev/yii2-thememanager
