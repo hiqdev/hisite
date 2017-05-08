@@ -11,7 +11,7 @@
 
 HiSite is a base project for building modular [Yii2] web applications from plugins.
 
-You can see a working demo here https://hisite.hiqdev.com/.
+[![Live Demo](https://img.shields.io/badge/live-demo-brightgreen.svg)](https://hisite.hiqdev.com/)
 
 [yii2]: http://www.yiiframework.com/
 
