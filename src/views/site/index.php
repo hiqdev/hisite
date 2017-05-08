@@ -22,7 +22,7 @@ $this->params['noTitle'] = true;
             <div class="col-md-4 col-sm-6">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-cubes fa-3x icon-md"></i>
+                        <i class="fa fa-cube icon-md"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Building blocks</h3>
@@ -35,7 +35,7 @@ $this->params['noTitle'] = true;
             <div class="col-md-4 col-sm-6">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-facebook icon-md"></i>
+                        <i class="fa fa-picture-o icon-md"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Pluggable themes</h3>
@@ -48,7 +48,7 @@ $this->params['noTitle'] = true;
             <div class="col-md-4 col-sm-6">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-google-plus icon-md"></i>
+                        <i class="fa fa-rocket icon-md"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">More...</h3>
