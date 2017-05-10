@@ -5,6 +5,7 @@
 use yii\helpers\Html;
 
 $this->title = 'About';
+$this->params['subtitle'] = 'HiSite is a base project for building modular Yii2 web applications from plugins';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">

@@ -12,7 +12,7 @@ $this->params['noTitle'] = true;
     <div class="well">
         <p><img src="<?= $this->assetManager->publish('@hisite/assets/images/big_logo.png')[1] ?>" alt="Yii 2" /></p>
         <h4>HiSite is a base project for building modular Yii2 web applications from plugins</h4>
-        <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
+        <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" style="text-decoration:none" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
     </div>
 </section>
 

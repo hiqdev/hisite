@@ -9,6 +9,7 @@ use yii\captcha\Captcha;
 use yii\helpers\Html;
 
 $this->title = 'Contact';
+$this->params['subtitle'] = 'You can reach us with the form below';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
