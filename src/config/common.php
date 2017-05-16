@@ -11,6 +11,7 @@
 return array_filter([
     'id' => $params['app.id'],
     'name' => $params['app.name'],
+    'language' => $params['app.language'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',

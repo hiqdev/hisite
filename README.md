@@ -53,6 +53,7 @@ Available configuration parameters:
 
 - `app.id`
 - `app.name`
+- `app.language`
 - `debug.enabled`
 - `debug.allowedIps`
 

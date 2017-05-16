@@ -11,6 +11,7 @@
 return [
     'app.id'                => 'hisite',
     'app.name'              => 'HiSite',
+    'app.language'          => null,
 
     'favicon.ico'           => '@hisite/assets/images/favicon.ico',
 
