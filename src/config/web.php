@@ -38,7 +38,6 @@ return array_filter([
         'errorAction' => 'site/error',
     ],
     'urlManager' => [
-        'class' => \yii\web\UrlManager::class,
         'enablePrettyUrl' => true,
         'showScriptName' => false,
         'enableStrictParsing' => false,

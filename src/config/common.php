@@ -9,13 +9,6 @@
  */
 
 return array_filter([
-    \yii\base\Application::class => function () {
-        return Yii::$app;
-    },
-    \yii\mail\MailerInterface::class => function () {
-        return Yii::$app->get('mailer');
-    },
-
     'application' => [
         'id' => $params['app.id'],
         'name' => $params['app.name'],
@@ -55,5 +48,4 @@ return array_filter([
             ],
         ],
     ],
-
 ]);
