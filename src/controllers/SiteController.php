@@ -27,28 +27,28 @@ class SiteController extends \yii\web\Controller
     {
         return [
             'error' => [
-                'class' => ErrorAction::class,
+                '__class' => ErrorAction::class,
             ],
             'captcha' => [
-                'class' => CaptchaAction::class,
+                '__class' => CaptchaAction::class,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
                 'backColor' => 0x222222,
                 'foreColor' => 0xFFFFFF,
             ],
             'index' => [
-                'class' => RenderAction::class,
+                '__class' => RenderAction::class,
                 'data' => function () {
                     return ['contactForm' => new ContactForm()];
                 },
             ],
             'about' => [
-                'class' => RenderAction::class,
+                '__class' => RenderAction::class,
             ],
             'policy' => [
-                'class' => RenderAction::class,
+                '__class' => RenderAction::class,
             ],
             'contact' => [
-                'class' => ContactAction::class,
+                '__class' => ContactAction::class,
             ],
         ];
     }

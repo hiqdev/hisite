@@ -18,7 +18,7 @@ return array_filter([
         ]),
         'modules' => array_filter([
             'debug' => empty($params['debug.enabled']) ? null : array_filter([
-                'class' => \yii\debug\Module::class,
+                '__class' => \yii\debug\Module::class,
                 'allowedIPs' => $params['debug.allowedIps'],
                 'historySize' => $params['debug.historySize'],
             ]),
@@ -50,9 +50,9 @@ return array_filter([
 
     /// menus
     \hiqdev\thememanager\menus\AbstractMainMenu::class => [
-        'class' => \hisite\menus\MainMenu::class,
+        '__class' => \hisite\menus\MainMenu::class,
     ],
     \hiqdev\thememanager\menus\AbstractFooterMenu::class => [
-        'class' => \hisite\menus\FooterMenu::class,
+        '__class' => \hisite\menus\FooterMenu::class,
     ],
 ]);

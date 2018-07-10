@@ -3,7 +3,7 @@
 use hiqdev\thememanager\widgets\Markdown;
 
 /** @var yii\web\View $this */
-$this->title = Yii::$app->name;
+$this->title = $this->getApp()->name;
 $this->params['noTitle'] = true;
 
 ?>

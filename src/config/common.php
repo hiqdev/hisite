@@ -30,20 +30,20 @@ return array_filter([
     ],
 
     'mailer' => [
-        'class' => \yii\swiftmailer\Mailer::class,
+        '__class' => \yii\swiftmailer\Mailer::class,
         'viewPath' => '@hisite/views/mail',
         'htmlLayout' => '@hisite/views/layouts/mail-html',
         'textLayout' => '@hisite/views/layouts/mail-text',
         'useFileTransport' => $params['mailer.enabled'] ? false : true,
     ],
     'cache' => [
-        'class' => \yii\caching\FileCache::class,
+        '__class' => \yii\caching\FileCache::class,
     ],
     'i18n' => [
-        'class' => \yii\i18n\I18N::class,
+        '__class' => \yii\i18n\I18N::class,
         'translations' => [
             'hisite' => [
-                'class' => \yii\i18n\PhpMessageSource::class,
+                '__class' => \yii\i18n\PhpMessageSource::class,
                 'basePath' => '@hisite/messages',
             ],
         ],
