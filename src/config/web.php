@@ -11,8 +11,7 @@
 use yii\di\Reference;
 
 return array_filter([
-    \yii\web\Application::class => Reference::to('application'),
-    'application' => [
+    'app' => [
         'bootstrap' => array_filter([
             'debug' => $params['debug.enabled'] ?? null,
         ]),
