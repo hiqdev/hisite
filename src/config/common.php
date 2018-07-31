@@ -12,12 +12,12 @@ return array_filter([
     'id' => $params['app.id'],
     'name' => $params['app.name'],
     'language' => $params['app.language'],
-    'aliases' => [
+    'aliases' => array_merge($aliases, [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
         '@vendor/bower' => '@vendor/bower-asset',
         '@vendor/npm' => '@vendor/npm-asset',
-    ],
+    ]),
     'basePath' => dirname(__DIR__),
     'viewPath' => '@hisite/views',
     'vendorPath' => '@root/vendor',
@@ -57,4 +57,5 @@ return array_filter([
             },
         ],
     ],
+    'params' => $params,
 ]);
