@@ -10,6 +10,8 @@
 
 $_ENV['ENV'] = !empty($_ENV['ENV']) ? $_ENV['ENV'] : 'prod';
 $_ENV['DEBUG'] = isset($_ENV['DEBUG']) ? $_ENV['DEBUG'] : $_ENV['ENV'] === 'dev';
+$_ENV['TEST'] = isset($_ENV['TEST']) ? (bool)$_ENV['TEST'] : false;
 
 defined('YII_DEBUG') or define('YII_DEBUG', $_ENV['DEBUG']);
 defined('YII_ENV') or define('YII_ENV', $_ENV['ENV']);
+defined('HISITE_TEST') or define('HISITE_TEST', $_ENV['TEST']);
