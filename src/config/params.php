@@ -25,4 +25,6 @@ return [
 
     'poweredBy.name'        => 'Yii2 & HiSite',
     'poweredBy.url'         => 'https://github.com/hiqdev/hisite',
+
+    'my.ip'                 => null,
 ];
