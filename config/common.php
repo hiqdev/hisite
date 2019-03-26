@@ -18,7 +18,7 @@ return array_filter([
         '@vendor/bower' => '@vendor/bower-asset',
         '@vendor/npm' => '@vendor/npm-asset',
     ]),
-    'basePath' => dirname(__DIR__),
+    'basePath' => dirname(__DIR__) . '/src',
     'viewPath' => '@hisite/views',
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',

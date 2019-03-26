@@ -8,4 +8,10 @@
  * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
-return [];
+return [
+    'languages' => ['ru'],
+    'sourcePath' => dirname(__DIR__) . '/src',
+    'messagePath' => dirname(__DIR__) . '/src/messages',
+    'sort' => true,
+    'removeUnused' => true,
+];
