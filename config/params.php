@@ -15,8 +15,8 @@ return [
 
     'favicon.ico'           => '@hisite/assets/images/favicon.ico',
 
-    'debug.enabled'         => null,
-    'debug.allowedIps'      => [],
+    'debug.enabled'         => !(defined('YII_ENV') && YII_ENV === 'prod'),
+    'debug.allowedIps'      => explode(',', $_ENV['DEBUG_ALLOWED_IPS'] ?? '127.0.0.1'),
     'debug.historySize'     => 100,
 
     'mailer.enabled'        => YII_ENV === 'prod' ? true : null,
