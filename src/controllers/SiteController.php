@@ -98,4 +98,16 @@ class SiteController extends \yii\web\Controller
 
         return $this->render('contact', compact('model'));
     }
+
+    /**
+     * Action of redirect to admin panel after data submit
+     *
+     * @return string
+     */
+    public function actionTransition()
+    {
+        return $this->render('transition', [
+            'href' => 'back',
+        ]);
+    }
 }
