@@ -8,11 +8,15 @@ use yii\web\View;
  * @var string $href
  */
 
+$delay = 3; //Time of page waiting
+
 TransitionAsset::register($this);
-$this->registerJs("$('.view-content').redirectPage({href:'$href'});");
+$this->registerJs("$('.view-content').redirectPage({href:'$href', delay: $delay});");
 
 ?>
 
 <div class="view-content">
-    <?= Yii::t('advancedhosting', 'You will be redirected after:') ?>&nbsp;<b><span id="timer-output"></span></b>
+    <?= Yii::t('advancedhosting', 'You will be redirected in {sec} seconds', [
+        'sec' => "<b><span id='timer-output'>$delay</span></b>",
+    ]) ?>
 </div>

@@ -1,7 +1,8 @@
 (function ($, window, document, undefined) {
     var pluginName = "redirectPage",
         defaults = {
-            'href': ''
+            'href': '',
+            'delay': 0
         };
 
     function Plugin(element, options) {
@@ -13,7 +14,7 @@
     }
     Plugin.prototype = {
         init: function () {
-            timer(3, this.timerHandler, this.timerCallback.bind(this));
+            timer(this.settings.delay, this.timerHandler, this.timerCallback.bind(this));
         },
         timerHandler: function (time) {
             $('#timer-output').text(time);
@@ -24,7 +25,7 @@
     };
 
     const timer = (to, handler, callback) => {
-        if (to-- <= 0) {
+        if (to-- <= 1) {
             callback();
             return;
         }
