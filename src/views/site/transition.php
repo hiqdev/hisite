@@ -16,7 +16,7 @@ $this->registerJs("$('.view-content').redirectPage({href:'$href', delay: $delay}
 ?>
 
 <div class="view-content">
-    <?= Yii::t('advancedhosting', 'You will be redirected in {sec} seconds', [
+    <?= Yii::t('hisite', 'You will be redirected in {sec} seconds', [
         'sec' => "<b><span id='timer-output'>$delay</span></b>",
     ]) ?>
 </div>

@@ -31,4 +31,5 @@ return [
     'Home' => 'Главная',
     'tech support' => 'техническая поддержка',
     'All rights reserved.' => 'Все права защищены.',
+    'You will be redirected in {sec} seconds' => 'Вы будете перенаправлены через {sec} сек.',
 ];
