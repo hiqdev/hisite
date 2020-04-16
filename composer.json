@@ -61,7 +61,7 @@
     },
     "extra": {
         "config-plugin": {
-            "defines": "config/defines.php",
+            "constants": "config/constants.php",
             "params": "config/params.php",
             "common": "config/common.php",
             "console": [
