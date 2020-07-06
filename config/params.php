@@ -13,7 +13,7 @@ return [
     'app.name'              => 'HiSite',
     'app.language'          => null,
 
-    'favicon.ico'           => '@hisite/assets/images/favicon.ico',
+    'favicon.ico'           => dirname(__DIR__) . '/src/assets/images/favicon.ico',
 
     'debug.enabled'         => !(defined('YII_ENV') && YII_ENV === 'prod'),
     'debug.allowedIps'      => explode(',', $_ENV['DEBUG_ALLOWED_IPS'] ?? '127.0.0.1'),

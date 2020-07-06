@@ -5,12 +5,13 @@ use hiqdev\thememanager\widgets\Markdown;
 /** @var yii\web\View $this */
 $this->title = Yii::$app->name;
 $this->params['noTitle'] = true;
+$hisitePath = dirname(__DIR__, 3);
 
 ?>
 
 <section id="main-slider" class="no-margin center">
     <div class="well" align=center>
-        <p><img src="<?= $this->assetManager->publish('@hisite/assets/images/big_logo.png')[1] ?>" alt="Yii 2" /></p>
+        <p><img src="<?= $this->assetManager->publish($hisitePath . '/src/assets/images/big_logo.png')[1] ?>" alt="Yii 2" /></p>
         <h4>HiSite is a base project for building modular Yii2 web applications from plugins</h4>
         <a href="https://github.com/hiqdev/hisite" class="btn btn-primary btn-lg" style="text-decoration:none" target="_blank"><i class="fa fa-github"></i>&nbsp;&nbsp;GitHub</a>
     </div>
@@ -68,7 +69,7 @@ $this->params['noTitle'] = true;
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <?= Markdown::widget(['file' => '@hisite/../README.md']) ?>
+                <?= Markdown::widget(['file' => $hisitePath . '/README.md']) ?>
             </div>
         </div>
     </div>

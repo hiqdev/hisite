@@ -8,18 +8,20 @@
  * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
+$srcPath = dirname(__DIR__) . '/src';
+
 return array_filter([
     'id' => $params['app.id'],
     'name' => $params['app.name'],
     'language' => $params['app.language'],
-    'aliases' => array_merge($aliases, [
+    'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
         '@vendor/bower' => '@vendor/bower-asset',
         '@vendor/npm' => '@vendor/npm-asset',
-    ]),
-    'basePath' => dirname(__DIR__) . '/src',
-    'viewPath' => '@hisite/views',
+    ],
+    'basePath' => $srcPath,
+    'viewPath' => $srcPath . '/views',
     'vendorPath' => '@root/vendor',
     'runtimePath' => '@root/runtime',
     'controllerNamespace' => 'hisite\controllers',
@@ -29,9 +31,9 @@ return array_filter([
     'components' => [
         'mailer' => [
             'class' => \yii\swiftmailer\Mailer::class,
-            'viewPath' => '@hisite/views/mail',
-            'htmlLayout' => '@hisite/views/layouts/mail-html',
-            'textLayout' => '@hisite/views/layouts/mail-text',
+            'viewPath' => $srcPath . '/views/mail',
+            'htmlLayout' => $srcPath . '/views/layouts/mail-html',
+            'textLayout' => $srcPath . '/views/layouts/mail-text',
             'useFileTransport' => $params['mailer.enabled'] ? false : true,
         ],
         'cache' => [
@@ -42,7 +44,7 @@ return array_filter([
             'translations' => [
                 'hisite' => [
                     'class' => \yii\i18n\PhpMessageSource::class,
-                    'basePath' => '@hisite/messages',
+                    'basePath' => $srcPath . '/messages',
                 ],
             ],
         ],
