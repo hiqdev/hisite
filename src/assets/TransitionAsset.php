@@ -13,7 +13,7 @@ class TransitionAsset extends AssetBundle
     /**
      * {@inheridoc}
      */
-    public $sourcePath = '@hisite/assets';
+    public $sourcePath = __DIR__;
 
     /**
      * {@inheridoc}

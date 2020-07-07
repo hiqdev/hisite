@@ -32,7 +32,7 @@ return array_filter([
         ],
         'themeManager' => [
             'pathMap' => [
-                '$themedViewPaths' => ['@hisite/views'],
+                '$themedViewPaths' => [dirname(__DIR__) . '/src/views'],
             ],
         ],
     ],
