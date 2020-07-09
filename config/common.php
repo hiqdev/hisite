@@ -15,6 +15,7 @@ return array_filter([
     'name' => $params['app.name'],
     'language' => $params['app.language'],
     'aliases' => array_merge($aliases, [
+        '@hisite' => '@vendor/hiqdev/hisite/src',
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
         '@vendor/bower' => '@vendor/bower-asset',
@@ -31,9 +32,9 @@ return array_filter([
     'components' => [
         'mailer' => [
             'class' => \yii\swiftmailer\Mailer::class,
-            'viewPath' => $srcPath . '/views/mail',
-            'htmlLayout' => $srcPath . '/views/layouts/mail-html',
-            'textLayout' => $srcPath . '/views/layouts/mail-text',
+            'viewPath' => '@hisite/views/mail',
+            'htmlLayout' => '@hisite/views/layouts/mail-html',
+            'textLayout' => '@hisite/views/layouts/mail-text',
             'useFileTransport' => $params['mailer.enabled'] ? false : true,
         ],
         'cache' => [
