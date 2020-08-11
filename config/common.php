@@ -14,12 +14,12 @@ return array_filter([
     'id' => $params['app.id'],
     'name' => $params['app.name'],
     'language' => $params['app.language'],
-    'aliases' => array_merge($aliases, [
+    'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
         '@vendor/bower' => '@vendor/bower-asset',
         '@vendor/npm' => '@vendor/npm-asset',
-    ]),
+    ],
     'basePath' => $srcPath,
     'viewPath' => $srcPath . '/views',
     'vendorPath' => '@root/vendor',
