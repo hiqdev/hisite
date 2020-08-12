@@ -20,9 +20,11 @@ services:
       - "LETSENCRYPT_EMAIL=devteam@hiqdev.com"
 
   php-fpm:
-    image: hiqdev/php:7.3-fpm
+    image: hiqdev/php:7.4-fpm
     networks:
-      - local-network
+      local-network:
+        aliases:
+          - local-php-fpm
     volumes:
       - ./:/app
       - ./.docker/php/var/log/php:/var/log/php
