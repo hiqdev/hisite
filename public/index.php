@@ -1,7 +1,7 @@
 <?php
 
-use hiqdev\composer\config\Builder;
 use yii\web\Application;
+use Yiisoft\Composer\Config\Builder;
 
 (function () {
     require __DIR__ . '/../config/bootstrap.php';

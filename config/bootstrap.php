@@ -9,7 +9,7 @@ if (!file_exists(HISITE_VENDOR_DIR . '/autoload.php')) {
 }
 
 require_once HISITE_VENDOR_DIR . '/autoload.php';
-require_once \hiqdev\composer\config\Builder::path('defines');
+require_once \Yiisoft\Composer\Config\Builder::path('constants');
 require_once HISITE_VENDOR_DIR . '/yiisoft/yii2/Yii.php';
 
 Yii::setAlias('@root', dirname(HISITE_VENDOR_DIR));
