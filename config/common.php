@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
-$srcPath = dirname(__DIR__) . '/src';
+$srcPath = '@vendor/hiqdev/hisite/src';
 
 return array_filter([
     'id' => $params['app.id'],
