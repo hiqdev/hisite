@@ -24,6 +24,6 @@ $message->renderTextBody(basename(__FILE__, '.php') . '-text', compact('user', '
     <p><?= Html::a(Html::encode($confirmLink), $confirmLink) ?></p>
 
     <?php if (!empty($token->get('notAfter'))) : ?>
-        <p><?= Yii::t('hiam', 'Attention! Link would be invalidated after {date} UTC', ['date' => $token->get('notAfter')]) ?></p>
+        <p><?= Yii::t('hiam', 'Attention! The link is valid until {date} UTC', ['date' => $token->get('notAfter')]) ?></p>
     <?php endif ?>
 </div>

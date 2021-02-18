@@ -12,6 +12,6 @@
 <?= $confirmLink ?>
 <?php if (!empty($token->get('notAfter'))) : ?>
 
-<?= Yii::t('hiam', 'Attention! Link would be invalidated after {date} UTC', ['date' => $token->get('notAfter')]) ?>
+<?= Yii::t('hiam', 'Attention! The link is valid until {date} UTC', ['date' => $token->get('notAfter')]) ?>
 <?php endif ?>
 
