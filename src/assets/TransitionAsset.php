@@ -6,7 +6,6 @@ use yii\web\AssetBundle;
 
 /**
  * Class TransitionAsset
- * @package advancedhosters\themes\advancedhosting
  */
 class TransitionAsset extends AssetBundle
 {
