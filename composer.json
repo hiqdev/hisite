@@ -46,7 +46,7 @@
         "php": "^5.6|^7.0|^8.0",
         "yiisoft/yii2": "^2.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "vlucas/phpdotenv": "^2.4",
+        "vlucas/phpdotenv": "^2.4 || ^5.3.1",
         "hiqdev/hidev-webapp": "dev-master",
         "hiqdev/yii2-menus": "dev-master",
         "hiqdev/yii2-thememanager": "dev-master"
