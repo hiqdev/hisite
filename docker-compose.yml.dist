@@ -5,29 +5,28 @@ services:
     image: nginx:latest
     ports:
       - "80"
-    links:
-      - php-fpm
-    networks:
-      proxy-network:
-      local-network:
     volumes:
       - ./:/app
       - ./.docker/nginx/etc/nginx/conf.d:/etc/nginx/conf.d
       - ./.docker/nginx/var/log/nginx:/var/log/nginx
+    networks:
+      proxy-network:
+      local-network:
     environment:
       - "VIRTUAL_HOST=${HOSTS}"
       - "LETSENCRYPT_HOST=${HOSTS}"
       - "LETSENCRYPT_EMAIL=devteam@hiqdev.com"
+      - "LETSENCRYPT_STANDALONE_CERTS=${LETSENCRYPT_STANDALONE_CERTS:-false}"
 
   php-fpm:
-    image: hiqdev/php:7.4-fpm
+    image: hiqdev/php:7.4-fpm-alpine
+    volumes:
+      - ./:/app
+      - ./.docker/php/var/log/php:/var/log/php
     networks:
       local-network:
         aliases:
           - local-php-fpm
-    volumes:
-      - ./:/app
-      - ./.docker/php/var/log/php:/var/log/php
     environment:
       - "ENV=${ENV}"
       - "PHP_IDE_CONFIG=serverName=${HOSTS}"
@@ -36,5 +35,5 @@ networks:
   local-network:
     driver: bridge
   proxy-network:
-    external:
-      name: "nginx-proxy-network-${REAL_IP}"
+    name: "nginx-proxy-network-${REAL_IP}"
+    external: true
