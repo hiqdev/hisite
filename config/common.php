@@ -30,7 +30,7 @@ return array_filter([
     ]),
     'components' => [
         'mailer' => [
-            'class' => \yii\swiftmailer\Mailer::class,
+            'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => $srcPath . '/views/mail',
             'htmlLayout' => $srcPath . '/views/layouts/mail-html',
             'textLayout' => $srcPath . '/views/layouts/mail-text',
