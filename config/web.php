@@ -38,7 +38,7 @@ return array_filter([
     ],
     'modules' => array_filter([
         'debug' => empty($params['debug.enabled']) ? null : array_filter([
-            'class' => \yii\debug\Module::class,
+            'class' => \hisite\debug\Module::class,
             'allowedIPs' => array_filter(array_merge(
                 (array)$params['debug.allowedIps'],
                 (array)$params['my.ip']
