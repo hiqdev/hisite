@@ -20,6 +20,13 @@ namespace hisite\debug;
  */
 class Module extends \yii\debug\Module
 {
+    public function init()
+    {
+        // Yii resolves a module's views next to its class file; keep the parent's.
+        $this->setBasePath('@yii/debug');
+        parent::init();
+    }
+
     public function bootstrap($app)
     {
         parent::bootstrap($app);
