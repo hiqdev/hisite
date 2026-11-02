@@ -20,6 +20,8 @@ namespace hisite\debug;
  */
 class Module extends \yii\debug\Module
 {
+    public $disableIpRestrictionWarning = true;
+
     public function init()
     {
         // Yii resolves a module's views next to its class file; keep the parent's.
